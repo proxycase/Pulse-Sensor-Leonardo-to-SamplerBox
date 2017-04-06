@@ -40,7 +40,9 @@ void setup() {
   interruptSetup();                 // Read Pulse Sensor signal every 2mS
   midiSetup();
 
-  noteOn(0, 42, 40);
+  delay(5000);
+  noteOn(0, 42, 60);
+  MidiUSB.flush();
 }
 
 const int NOTE_NUM = 120;
